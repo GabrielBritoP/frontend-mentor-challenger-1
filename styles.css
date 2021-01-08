@@ -1,7 +1,127 @@
+* {
+  padding: 0;
+  outline: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+ 
+}
+body{
+  min-height: 100vh;
+  overflow: hidden;
+  height:100vh;
+  width: 100%;
+  background:hsl(185, 75%, 39%)
+
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.card {
+ width:clamp(320px,calc(50vh-100px),400px );
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ box-shadow: 8px 12px 24px rgba(0,0,0,0.2)
+  
+}
+.top-image{
+  transform: translate(-35%, -55%);
+  position:absolute;
+}
+.card_top{
+  width:100%;
+  height:135px;
+  position:relative;
+  background-image:url("./images/bg-pattern-card.svg");
+  background-size:contain;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+}
+.card_profile{
+  width:100px;
+  height: 100px;
+  border-radius:50%;
+  background:white;
+  padding:5px;
+  position:absolute;
+  bottom:-50px;
+  left:50%;
+  transform:translate(-50%);
+
+}
+.card_profile img{
+  border-radius:50%;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+}
+.card_info{
+  margin-top:60px;
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+.card_title{
+  padding:15px 5px;
+  text-align:right;
+  font-weight:700;
+  color:hsl(229,-23%,-23%);
+}
+.card_age{
+  padding: 15px 5px;
+}
+.card_city{
+  grid-column: span 2;
+  text-align: center;
+  font-size:14px;
+  color: hsl(0,0%,59%)
+}
+.card-_informations{
+  margin-top:15px;
+  display:flex;
+  border-top:1px solid hsl 0,0%,59%;
+  padding: 20px 0;
+}
+.information{
+  width:18px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information_number{
+  font-size:18px;
+  color:hsl(229,23%,23%);
+  font-weight:700;
+  margin-bottom:5px;
+}
+.information_title{
+font-size:14px;
+color:hsl(0, 0%, 59%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.bottom-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform:translat
+  (25%, 65%);
+}
+
+@media screen and(max-widht:706px){
+  .top{
+    transform:translate(-70%,-55%)
+  }
+  .bottom{
+    transform:translate(70%,55%)
+  }
 }
