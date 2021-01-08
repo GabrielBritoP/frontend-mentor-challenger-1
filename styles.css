@@ -1,127 +1,105 @@
-* {
-  padding: 0;
-  outline: 0;
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
   margin: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
- 
-}
-body{
-  min-height: 100vh;
-  overflow: hidden;
-  height:100vh;
-  width: 100%;
-  background:hsl(185, 75%, 39%)
+  padding: 0;
+  background-color: #19a2ae;
+  background-position: right 45vw top -120vh, 48vw 50vh;
+  background-size: 180vh;
+  background-repeat: no-repeat;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg"); }
 
-}
-.container {
-  position: relative;
-  text-align: center;
-}
-.card {
- width:clamp(320px,calc(50vh-100px),400px );
- position:absolute;
- top:50%;
- left:50%;
- transform:translate(-50%,-50%);
- box-shadow: 8px 12px 24px rgba(0,0,0,0.2)
-  
-}
-.top-image{
-  transform: translate(-35%, -55%);
-  position:absolute;
-}
-.card_top{
-  width:100%;
-  height:135px;
-  position:relative;
-  background-image:url("./images/bg-pattern-card.svg");
-  background-size:contain;
-  border-top-left-radius:12px;
-  border-top-right-radius:12px;
-}
-.card_profile{
-  width:100px;
-  height: 100px;
-  border-radius:50%;
-  background:white;
-  padding:5px;
-  position:absolute;
-  bottom:-50px;
-  left:50%;
-  transform:translate(-50%);
-
-}
-.card_profile img{
-  border-radius:50%;
-  width:100%;
-  height:100%;
-  border-radius:50%;
-}
-.card_info{
-  margin-top:60px;
-  display: grid;
-  grid-template-columns: 60% auto;
-}
-.card_title{
-  padding:15px 5px;
-  text-align:right;
-  font-weight:700;
-  color:hsl(229,-23%,-23%);
-}
-.card_age{
-  padding: 15px 5px;
-}
-.card_city{
-  grid-column: span 2;
-  text-align: center;
-  font-size:14px;
-  color: hsl(0,0%,59%)
-}
-.card-_informations{
-  margin-top:15px;
-  display:flex;
-  border-top:1px solid hsl 0,0%,59%;
-  padding: 20px 0;
-}
-.information{
-  width:18px;
-  display:flex;
+main {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.information_number{
-  font-size:18px;
-  color:hsl(229,23%,23%);
-  font-weight:700;
-  margin-bottom:5px;
-}
-.information_title{
-font-size:14px;
-color:hsl(0, 0%, 59%);
-}
+  height: calc(100vh - 28px); }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-.bottom-image {
+.card {
+  display: flex;
+  overflow: hidden;
+  width: 320px;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.3); }
+
+.card-header {
+  position: relative;
+  height: 130px;
+  background-image: url("images/bg-pattern-card.svg"); }
+
+.card-body {
+  padding: 70px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.profile-title {
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card-header img {
+  bottom: -50px;
+  border-radius: 50%;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  transform:translat
-  (25%, 65%);
-}
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid white; }
 
-@media screen and(max-widht:706px){
-  .top{
-    transform:translate(-70%,-55%)
-  }
-  .bottom{
-    transform:translate(70%,55%)
-  }
-}
+.profile-title span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2d3248; }
+
+.profile-title span:last-child {
+  font-weight: 400;
+  padding-left: 10px;
+  color: #6a6f81; }
+
+.profile-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6a6f81; }
+
+.card-footer {
+  border-top: 1px solid #ebebeb; }
+
+.card-footer ul {
+  display: flex;
+  padding: 0 10px 0 10px;
+  justify-content: space-around;
+  list-style-type: none; }
+
+.card-footer li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%; }
+
+.card-footer li span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2d3248; }
+
+.card-footer li span:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 10px;
+  color: #6a6f81; }
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 300; }
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700; }

@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Begginer| Profile card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Profile card component</title>
+    <link href="styles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
- 
-  <image class ="top-image " src="images\bg-pattern-top.svg"></image>
-  <image class ="bottom-image" src="images\bg-pattern-bottom.svg"></image>
-  <div class="container">
-    <image class="card-image" src ="images/bg-pattern-card.svg"></image>
+<main>
     <div class="card">
-      <div class="card_top">
-        <div class="card_profile">
-      <image src="./images/image-victor.jpg" class="profile_image" alt="profile"></image>
-    </div>
-  </div>
-    <div class="card_info">
-      <div class="card_title">Victor Crest</div>
-      <div class="card_age">26</div>
-      <div class ="card_city">London</div>
+        <div class="card-header">
+            <img src="images/image-victor.jpg" alt="Profile image"/>
+        </div>
 
-    <div class="card_informations">
-      <div class="information">
-        <div class="information_number">80k</div>
-        <div class="information_title">Followers</div>
-      </div>
-      <div class="information">
-        <div class="information_number">80k</div>
-        <div class="information_title">Likes</div>
-      </div>
-      <div class="information">
-        <div class="information_number">1.4k</div>
-        <div class="information_title">Photos</div>
-      </div>
+        <div class="card-body">
+            <div class="profile-title">
+                <span>Victor Crest</span>
+                <span>26</span>
+            </div>
+
+            <span class="profile-description">London</span>
+        </div>
+
+        <div class="card-footer">
+            <ul>
+                <li>
+                    <span>80K</span>
+                    <span>Followers</span>
+                </li>
+                <li>
+                    <span>803K</span>
+                    <span>Likes</span>
+                </li>
+                <li>
+                    <span>1.4K</span>
+                    <span>Photos</span>
+                </li>
+            </ul>
+        </div>
     </div>
-    
-  </div>
- 
+</main>
+</body>
+<footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
